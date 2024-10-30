@@ -12,17 +12,30 @@
     <url>https://github.com/prestodb/slice</url>
 
     <parent>
-        <groupId>com.facebook.airlift</groupId>
+        <groupId>com.github.zacblanco.airbase</groupId>
         <artifactId>airbase</artifactId>
-        <version>104-SNAPSHOT</version>
+        <version>upgradeJava21Jitpack-SNAPSHOT</version>
     </parent>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <inceptionYear>2012</inceptionYear>
 
     <properties>
         <air.javadoc.lint>-missing</air.javadoc.lint>
-        <air.test.jvmsize>3584m</air.test.jvmsize>
+        <air.test.jvmsize>4096m</air.test.jvmsize>
         <dep.nexus-staging-plugin.version>1.6.8</dep.nexus-staging-plugin.version>
     </properties>
 
